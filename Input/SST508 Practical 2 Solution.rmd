@@ -339,7 +339,7 @@ b <- Events.non.exposed * Person.years.exposed
   
 Crude_all <- c(a/b)
 
-Table1 <- cbind(Crude, Population, Events.exposed)
+Table1 <- cbind(Crude_all, Population, Events.exposed)
 
 Table1 <- cbind(Table1, Person.years.exposed, Events.non.exposed, Person.years.non.exposed)
 
@@ -414,7 +414,7 @@ R <- c(sum(Weights))
 
 MH.adjRR <- c(Q/R)
 
-AdjResults <- cbind(Crude, Q, R, MH.adjRR)
+AdjResults <- cbind(Crude_all, Q, R, MH.adjRR)
 
 AdjResults <- as.data.frame(AdjResults); AdjResults
 ```
